@@ -1,0 +1,11 @@
+.mat-grid-tile> img{
+ width:100%;
+   
+}
+.secondary-img > *{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.main-image > *{
+    border:1px solid black;
+}

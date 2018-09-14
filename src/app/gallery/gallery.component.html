@@ -1,0 +1,8 @@
+
+
+<mat-grid-list cols="5" rowHeight="200px">
+  <mat-grid-tile *ngFor="let image of imageList" [colspan]="image.isCentered ? 5 : 1" [ngClass]="image.isCentered ? 'main-image' : 'secondary-img'" [rowspan]="image.isCentered ? 2 : 1">
+      <img [src]="image.path" alt="" (click)="onSetPrimary(image)">
+    
+  </mat-grid-tile>
+</mat-grid-list>

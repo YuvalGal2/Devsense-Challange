@@ -1,0 +1,9 @@
+<div class="root" (click)="getRoot()">
+    <p>Root</p>
+</div>
+
+<div *ngIf="root && root.children" style="position: absolute; ">
+    <div  class="warpper" *ngFor="let child of root.children">
+      <app-root  [root]="child"></app-root>
+    </div>
+</div>

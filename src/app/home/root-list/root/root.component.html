@@ -1,0 +1,23 @@
+
+<div *ngIf="root" >
+  <div [style.marginRight.px]="indent" class="root" *ngIf="root.type === 0" [ngClass]="'lightgray-node'" (click)="getRoot(root.label)">
+    <p>{{root.label}}</p>
+  </div>
+
+  <a [routerLink]="['/picture', imgID]">  <div [style.marginRight.px]="indent" class="root" *ngIf="root.type === 1"  [ngClass]="'blue-node'">
+   <!-- pic-->
+   Picture
+  </div></a>
+
+  <div *ngIf="root.children">
+    <div style="margin-left: 25px;" *ngFor="let child of root.children">
+
+        <app-root [root]="child" [indent]="indent*2"></app-root>
+
+    </div>
+  </div>
+
+</div>
+
+
+

@@ -1,0 +1,22 @@
+.root {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  
+  margin:10px;
+  background: #d8d8d8;
+  cursor: pointer;
+}
+.list-warpper{
+  background-color:red;
+}
+
+.root > p {
+  padding: 1px;
+
+}
+
+
+
+
+
